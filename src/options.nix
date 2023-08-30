@@ -51,6 +51,11 @@ in {
       If left at the default value, nothing will be done.
     '';
   };
+  showWarnings = mkOption {
+    type = types.bool;
+    default = true;
+  };
+
   # overrides = mkOption {
   #   type = types.nullOr types.anything;
   #   default = null;
